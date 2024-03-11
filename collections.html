@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra</title>
+
+    <!--Tailwind CSS CDN Link-->
+
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!--Offer-->
+
+    <section class="bg-black text-gray-200 text-2xl flex items-center p-2 gap-10 justify-center "  id="offer">
+        <h1>Sign up and <b>GET 20% OFF</b> for your First Order</h1>
+        <p id="close" class="cursor-pointer">x</p>
+    </section>
+
+    <!--Responsive Navbar-->
+    <nav class="m-3  bg-white flex justify-between p-2 sticky top-0 z-10">
+        <h1 class="font-bold text-2xl">Nostra</h1>
+        <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="w-6 h-6 md:hidden">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+        <ul class=" hidden gap-10 md:flex ">
+            <li>
+                <a class="hover:underline" href="index.html">Home</a>
+            </li>
+            <li>
+                <a class="hover:underline" href="#newArrival">New Arrival</a>
+            </li>
+            <li>
+                <a class="hover:underline" href="#mostWanted">Most Wanted</a>
+            </li>
+            <li>
+                <a class="hover:underline" href="collections.html">Collections</a>
+            </li>
+            <li>
+                <a class="hover:underline" href="contact.html">Contact Us</a>
+            </li>
+        </ul>
+    </nav>
+
+     <!--Side Navbar-->
+
+     <section id="sidenav" class="bg-gray-900 text-gray-100 fixed z-20 top-0 transition-all duration-1000 p-5" style="width:50%;height:100vh;left:-50%">
+        <div class="text-right p-5">
+            <p id="closenav" class="inline cursor-pointer">X</p>
+        </div>
+        <ul class="flex flex-col gap-10">
+            <li>
+                <a class="hover:underline" href="index.html">Home</a>
+            </li>
+            <li>
+                <a class="hover:underline" href="#newArrival">New Arrival</a>
+            </li>
+            <li>
+                <a class="hover:underline" href="#mostWanted">Most Wanted</a>
+            </li>
+            <li>
+                <a class="hover:underline" href="collections.html">Collections</a>
+            </li>
+            <li>
+                <a class="hover:underline" href="contact.html">Contact Us</a>
+            </li>
+        </ul>
+    </section>
+
+    <!--collections-->
+    <section class="flex m-3 gap-10">
+        <!--CheckBox-->
+
+        <section>
+            <div class="text-2xl">
+                <h3 class=" mt-10 font-bold">Occasion</h3>
+                <div class="mt-5">
+                    <input type="checkbox" name="tags" value="Summer">Summer
+                    <br>
+                    <input type="checkbox" name="tags" value="Beach">Beach
+                    <br>
+                    <input type="checkbox" name="tags" value="Party">Party
+                </div>
+
+                <h3 class="text-2xl mt-10 font-bold">Colors</h3>
+                <div class="mt-5">
+                    <input type="checkbox" name="tags" value="Red">Red
+                    <br>
+                    <input type="checkbox" name="tags" value="Blue">Blue
+                    <br>
+                    <input type="checkbox" name="tags" value="White">White
+                    <br>
+                    <input type="checkbox" name="tags" value="Green">Green
+                    <br>
+                </div>
+
+                <h3 class="text-2xl mt-10 font-bold">Arrivals</h3>
+                <div class="mt-5">
+                    <input type="checkbox" name="tags" value="New">New<br>
+                    <input type="checkbox" name="tags" value="Old">Old
+                </div>
+            </div>
+
+        </section>
+        <!--Vertical line-->
+        <div class="ml-40" style="height:1400px;border-left:solid black 4px ">
+        </div>
+        <!--Collections-->
+        <section mt-3>
+            <div class="border-black border-solid border-2  rounded p-1" style="position: relative;">
+                <input class="outline-none" style="width:700px;" type="text" placeholder="search">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6 right-2 top-1" style="position:absolute">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                </svg>
+
+            </div>
+            <div class=" mt-4 grid grid-cols-3 gap-10">
+                <div >
+                    <img src="./images/arrival1.jpg">
+                    <h1 class="text-2xl font-bold">Floral Summer Shirt</h1>
+                    <p>&#8377 220</p>
+                </div>
+                <div>
+                    <img src="./images/collections1.jpg">
+                    <h1 class="text-2xl font-bold">Summer Green</h1>
+                    <p>&#8377 250</p>
+                </div>
+                <div>
+                    <img src="./images/collections2.jpg">
+                    <h1 class="text-2xl font-bold">Party Floral Shirt</h1>
+                    <p>&#8377 350</p>
+                </div>
+                <div>
+                    <img src="./images/collections3.jpg">
+                    <h1 class="text-2xl font-bold">Floral Summer Shirt</h1>
+                    <p>&#8377 450</p>
+                </div>
+                <div>
+                    <img src="./images/collections4.jpg">
+                    <h1 class="text-2xl font-bold">Beach Shirt</h1>
+                    <p>&#8377 230</p>
+                </div>
+                <div>
+                    <img src="./images/collections5.jpg">
+                    <h1 class="text-2xl font-bold">Shirt Party Red</h1>
+                    <p>&#8377 270</p>
+                </div>
+                <div>
+                    <img src="./images/collections2.jpg">
+                    <h1 class="text-2xl font-bold">Party Floral Shirt</h1>
+                    <p>&#8377 380</p>
+                </div>
+                <div>
+                    <img src="./images/collections5.jpg">
+                    <h1 class="text-2xl font-bold">Shirt Party Red</h1>
+                    <p>&#8377 430</p>
+                </div>
+                <div>
+                    <img src="./images/arrival1.jpg">
+                    <h1 class="text-2xl font-bold">Floral Summer Shirt</h1>
+                    <p>&#8377 290</p>
+                </div>
+            </div>
+
+
+        </section>
+    </section>
+
+     <!--News letter-->
+
+     <section class="m-3 mt-16 text-center items-center">
+        <h1 class="text-5xl font-bold" >Join our News Letter</h1>
+        <h2 class="text-3xl mt-5">Signup for our email Newspaper to get exclusive discounts, updates, and more</h2>
+        <input class="border-solid border-2 border-black mt-5 p-2 " style="width:80%" type="text">
+        <br>
+        <button class="text-gray-100 text-2xl bg-gray-900 rounded mt-5 p-3" style="width:fit-content">Subscribe -></button>
+
+    </section>
+
+    <!--Footer-->
+
+    <section class="mt-16 bg-gray-900 p-10">
+        <div >
+            <h1 class="text-gray-200 text-5xl font-bold pt-10">Nostra</h1>
+            <h2 class="text-4xl text-gray-200 pt-5">The Standard chunk of Lorem ipsum used since the 1500s is reprodused below for those interest</h2>
+            <div class="p-5 pt-5 flex gap-16">
+                <img src="./images/instagram.png">
+                <img src="./images/twitter.png">
+                <img src="./images/communication.png">
+
+            </div>
+            <h2 class="text-4xl text-gray-200">@ 2023 Nostra.com</h2>
+        </div>
+
+    </section>
+
+    <script src="collections.js"></script>
+</body>
+
+</html>
